@@ -20,6 +20,7 @@ RUN git clone https://github.com/opencv/dldt.git && \
 # Download and Install Model Zoo
 RUN cd ~ && \
     git clone https://github.com/opencv/open_model_zoo.git && \
+    cd open_model_zoo && \
     git checkout 2018_R4 && \
     git submodule init && \
     git submodule update
